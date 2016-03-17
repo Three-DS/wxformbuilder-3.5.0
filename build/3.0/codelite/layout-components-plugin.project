@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="layout-components-plugin">
+  <VirtualDirectory Name="plugins">
+    <VirtualDirectory Name="layout">
+      <File Name="../../../plugins/layout/layout.cpp"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings Type="Dynamic Library">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library">
+      <General OutputFile="../../../output/lib/wxformbuilder/liblayout-30.so" IntermediateDirectory="obj/Debug/layout-components-plugin" Command="./liblayout-30.so" CommandArguments="" WorkingDirectory="../../../output/lib/wxformbuilder" PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-g;-Wall;-fPIC;-O0;$(shell wx-config --debug=yes --static=no --unicode=yes --cxxflags)">
+        <IncludePath Value="../../../sdk/tinyxml"/>
+        <IncludePath Value="../../../sdk/plugin_interface"/>
+        <Preprocessor Value="UNICODE"/>
+        <Preprocessor Value="_UNICODE"/>
+        <Preprocessor Value="DEBUG"/>
+        <Preprocessor Value="_DEBUG"/>
+        <Preprocessor Value="BUILD_DLL"/>
+        <Preprocessor Value="TIXML_USE_TICPP"/>
+        <Preprocessor Value="__WXDEBUG__"/>
+        <Preprocessor Value="WXUSINGDLL"/>
+      </Compiler>
+      <Linker Required="yes" Options="-shared;$(shell wx-config --debug=yes --static=no --unicode=yes --libs )">
+        <LibraryPath Value="../../../sdk/lib" />
+        <Library Value="wx_gtk2ud_plugin-interface-3.0" />
+        <Library Value="ticppd" />
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library">
+      <General OutputFile="../../../output/lib/wxformbuilder/liblayout.so" IntermediateDirectory="obj/Release/layout-components-plugin" Command="./liblayout.so" CommandArguments="" WorkingDirectory="../../../output/lib/wxformbuilder" PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-Wall;-O2;-fPIC;-fno-strict-aliasing;$(shell wx-config --static=no --unicode=yes --cxxflags)">
+        <IncludePath Value="../../../sdk/tinyxml"/>
+        <IncludePath Value="../../../sdk/plugin_interface"/>
+        <Preprocessor Value="UNICODE"/>
+        <Preprocessor Value="_UNICODE"/>
+        <Preprocessor Value="NDEBUG"/>
+        <Preprocessor Value="BUILD_DLL"/>
+        <Preprocessor Value="TIXML_USE_TICPP"/>
+        <Preprocessor Value="WXUSINGDLL"/>
+      </Compiler>
+      <Linker Required="yes" Options="-s;-shared;$(shell wx-config --static=no --unicode=yes --libs )">
+        <LibraryPath Value="../../../sdk/lib" />
+        <Library Value="wx_gtk2u_plugin-interface-3.0" />
+        <Library Value="ticpp" />
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+  </Settings>
+  <Dependencies name="Debug">
+    <Project Name="plugin-interface"/>
+    <Project Name="TiCPP"/>
+  </Dependencies>
+  <Dependencies name="Release">
+    <Project Name="plugin-interface"/>
+    <Project Name="TiCPP"/>
+  </Dependencies>
+</CodeLite_Project>

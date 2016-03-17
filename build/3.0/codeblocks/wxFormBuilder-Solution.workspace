@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="wxFormBuilder-Solution">
+		<Project filename="TiCPP.cbp" active="1">
+		</Project>
+		<Project filename="plugin-interface.cbp">
+		</Project>
+		<Project filename="additional-components-plugin.cbp">
+			<Depends filename="plugin-interface.cbp" />
+			<Depends filename="TiCPP.cbp" />
+		</Project>
+		<Project filename="common-components-plugin.cbp">
+			<Depends filename="plugin-interface.cbp" />
+			<Depends filename="TiCPP.cbp" />
+		</Project>
+		<Project filename="containers-components-plugin.cbp">
+			<Depends filename="plugin-interface.cbp" />
+			<Depends filename="TiCPP.cbp" />
+		</Project>
+		<Project filename="forms-components-plugin.cbp">
+			<Depends filename="plugin-interface.cbp" />
+			<Depends filename="TiCPP.cbp" />
+		</Project>
+		<Project filename="layout-components-plugin.cbp">
+			<Depends filename="plugin-interface.cbp" />
+			<Depends filename="TiCPP.cbp" />
+		</Project>
+		<Project filename="wxFormBuilder.cbp">
+			<Depends filename="TiCPP.cbp" />
+			<Depends filename="plugin-interface.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

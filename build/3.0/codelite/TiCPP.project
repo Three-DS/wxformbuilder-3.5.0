@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="TiCPP">
+  <VirtualDirectory Name="sdk">
+    <VirtualDirectory Name="tinyxml">
+      <File Name="../../../sdk/tinyxml/tinyxml.cpp"/>
+      <File Name="../../../sdk/tinyxml/ticpp.cpp"/>
+      <File Name="../../../sdk/tinyxml/tinystr.cpp"/>
+      <File Name="../../../sdk/tinyxml/tinyxmlerror.cpp"/>
+      <File Name="../../../sdk/tinyxml/tinyxmlparser.cpp"/>
+      <File Name="../../../sdk/tinyxml/ticpp.h"/>
+      <File Name="../../../sdk/tinyxml/tinyxml.h"/>
+      <File Name="../../../sdk/tinyxml/tinystr.h"/>
+      <File Name="../../../sdk/tinyxml/ticppapi.h"/>
+      <File Name="../../../sdk/tinyxml/ticpprc.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Settings Type="Static Library">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library">
+      <General OutputFile="../../../sdk/lib/libticppd.a" IntermediateDirectory="obj/Debug/TiCPP" Command="./libticppd.a" CommandArguments="" WorkingDirectory="../../../sdk/lib" PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-g;-O0;-fPIC">
+        <Preprocessor Value="UNICODE"/>
+        <Preprocessor Value="_UNICODE"/>
+        <Preprocessor Value="DEBUG"/>
+        <Preprocessor Value="_DEBUG"/>
+        <Preprocessor Value="TIXML_USE_TICPP"/>
+      </Compiler>
+      <Linker Required="yes" Options="">
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Static Library">
+      <General OutputFile="../../../sdk/lib/libticpp.a" IntermediateDirectory="obj/Release/TiCPP" Command="./libticpp.a" CommandArguments="" WorkingDirectory="../../../sdk/lib" PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-fPIC">
+        <Preprocessor Value="UNICODE"/>
+        <Preprocessor Value="_UNICODE"/>
+        <Preprocessor Value="NDEBUG"/>
+        <Preprocessor Value="TIXML_USE_TICPP"/>
+      </Compiler>
+      <Linker Required="yes" Options="-s">
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+  </Settings>
+  <Dependencies name="Debug">
+  </Dependencies>
+  <Dependencies name="Release">
+  </Dependencies>
+</CodeLite_Project>

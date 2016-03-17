@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="plugin-interface" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../sdk/lib/libwx_gtk2ud_plugin-interface-3.0.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Debug/plugin-interface" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-Wall" />
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DTIXML_USE_TICPP" />
+					<Add option="-D__WXDEBUG__" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-O0" />
+					<Add option="-fPIC" />
+					<Add option="`wx-config --debug=yes --static=no --unicode=yes --cxxflags`" />
+					<Add directory="../../../sdk/tinyxml" />
+				</Compiler>
+				<Linker>
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../sdk/lib/libwx_gtk2u_plugin-interface-3.0.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Release/plugin-interface" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DTIXML_USE_TICPP" />
+					<Add option="-DWXUSINGDLL" />
+					<Add option="-fPIC" />
+					<Add option="-fno-strict-aliasing" />
+					<Add option="`wx-config --static=no --unicode=yes --cxxflags`" />
+					<Add directory="../../../sdk/tinyxml" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../../sdk/plugin_interface/fontcontainer.h">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/xrcconv.h">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/plugin.h">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/component.h">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/forms/wizard.h">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/xrcconv.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/forms/wizard.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/plugin_interface/forms/wizard.fbp">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+

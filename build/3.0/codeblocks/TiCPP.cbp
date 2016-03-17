@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TiCPP" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../../sdk/lib/libticppd.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Debug/TiCPP" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DTIXML_USE_TICPP" />
+					<Add option="-O0" />
+					<Add option="-fPIC" />
+				</Compiler>
+				<Linker>
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../../sdk/lib/libticpp.a" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Release/TiCPP" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DTIXML_USE_TICPP" />
+					<Add option="-fPIC" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../../sdk/tinyxml/tinyxml.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/ticpp.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/tinystr.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/tinyxmlerror.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/tinyxmlparser.cpp">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/ticpp.h">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/tinyxml.h">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/tinystr.h">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/ticppapi.h">
+		</Unit>
+		<Unit filename="../../../sdk/tinyxml/ticpprc.h">
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
+

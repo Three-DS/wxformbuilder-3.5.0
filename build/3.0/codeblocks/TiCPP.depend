@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1276285306 source:/usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/ticpp.cpp
+	"ticpp.h"
+	"ticpprc.h"
+	"tinyxml.h"
+	<sstream>
+
+1350611294 /usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/ticpp.h
+	"ticppapi.h"
+	"tinyxml.h"
+	<sstream>
+	<vector>
+	<memory>
+	<exception>
+	<typeinfo>
+
+1350611294 /usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/ticppapi.h
+	<windows.h>
+
+1350611294 /usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/tinyxml.h
+	"ticppapi.h"
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+	"ticpprc.h"
+
+1350611294 /usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/tinystr.h
+	"ticppapi.h"
+	<assert.h>
+	<string.h>
+
+1350611294 /usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/ticpprc.h
+	"ticppapi.h"
+	<vector>
+
+1191316858 source:/usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/tinystr.cpp
+	"tinystr.h"
+
+1242525436 source:/usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/tinyxml.cpp
+	"tinyxml.h"
+	<ctype.h>
+	<sstream>
+	<iostream>
+
+1191316858 source:/usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/tinyxmlerror.cpp
+	"tinyxml.h"
+
+1242525436 source:/usr/local/src/c.cpp.h/_/wxWidgets/wxformbuilder/3.5.0/sdk/tinyxml/tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
